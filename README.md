@@ -32,7 +32,6 @@ public function add_sections() {
 
 	return false;
 }
-
 ```
 
 
