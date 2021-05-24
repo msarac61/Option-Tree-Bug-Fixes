@@ -1,4 +1,4 @@
-# Wordpress Option Tree "Trying to access array offset on value of type bool" Bug Fix
+# Wordpress Option Tree "Trying to access array offset on value of type bool" Error Solved
 
 'Solved'
 
