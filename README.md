@@ -7,59 +7,59 @@
 3. Find First Code - Replace Second Code
 
 ```
-		public function add_sections() {
+public function add_sections() {
 
-			// Loop through options.
-			foreach ( (array) $this->options as $option ) {
+	// Loop through options.
+	foreach ( (array) $this->options as $option ) {
 
-				// Loop through pages.
-				foreach ( (array) $this->get_pages( $option ) as $page ) {
+		// Loop through pages.
+		foreach ( (array) $this->get_pages( $option ) as $page ) {
 
-					// Loop through page sections.
-					foreach ( (array) $this->get_sections( $page ) as $section ) {
+			// Loop through page sections.
+			foreach ( (array) $this->get_sections( $page ) as $section ) {
 
-						// Add each section.
-						add_settings_section(
-							$section['id'],
-							$section['title'],
-							array( $this, 'display_section' ),
-							$page['menu_slug']
-						);
+				// Add each section.
+				add_settings_section(
+					$section['id'],
+					$section['title'],
+					array( $this, 'display_section' ),
+					$page['menu_slug']
+				);
 
-					}
-				}
 			}
-
-			return false;
 		}
+	}
+
+	return false;
+}
 
 ```
 
 
 ```
-		public function add_sections() {
+public function add_sections() {
 
-			// Loop through options.
-			foreach ( (array) $this->options as $option ) {
+	// Loop through options.
+	foreach ( (array) $this->options as $option ) {
 
-				// Loop through pages.
-				foreach ( (array) $this->get_pages( $option ) as $page ) {
+		// Loop through pages.
+		foreach ( (array) $this->get_pages( $option ) as $page ) {
 
-					// Loop through page sections.
-					foreach ( (array) $this->get_sections( $page ) as $section ) {
+			// Loop through page sections.
+			foreach ( (array) $this->get_sections( $page ) as $section ) {
 
-						// Add each section.
-						add_settings_section(
-							$section['id'] ?? '',
-							$section['title'] ?? '',
-							array( $this, 'display_section' ),
-							$page['menu_slug']
-						);
+				// Add each section.
+				add_settings_section(
+					$section['id'] ?? '',
+					$section['title'] ?? '',
+					array( $this, 'display_section' ),
+					$page['menu_slug']
+				);
 
-					}
-				}
 			}
-
-			return false;
 		}
+	}
+
+	return false;
+}
 ```
