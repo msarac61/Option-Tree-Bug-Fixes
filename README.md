@@ -6,6 +6,7 @@
 2. Open class-ot-settings.php
 3. Find First Code - Replace Second Code
 
+```
 		public function add_sections() {
 
 			// Loop through options.
@@ -32,8 +33,10 @@
 			return false;
 		}
 
+```
 
 
+```
 		public function add_sections() {
 
 			// Loop through options.
@@ -59,3 +62,4 @@
 
 			return false;
 		}
+```
