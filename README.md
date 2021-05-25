@@ -4,7 +4,7 @@
 
 1. Go option-tree/includes
 2. Open class-ot-settings.php
-3. Find First Code - Replace Second Code
+3. Find First - Replace Code
 
 ```
 public function add_sections() {
